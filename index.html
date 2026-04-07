@@ -151,6 +151,160 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title">Paper Preview</h2>
+    <iframe src="./data/Poster_Robosoft.pdf" width="100%" height="600px" style="border: none;">
+      Your browser does not support PDFs. <a href="./data/Poster_Robosoft.pdf">Download the PDF</a>.
+    </iframe>
+  </div>
+</section>
+
+
+<!-- ==================== SOFT BODY GRASPING SECTION ==================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Soft Body Grasping</h2>
+    <p class="subtitle has-text-centered">Ground truth (FEM) vs. GNN prediction</p>
+
+    <!-- Row 1: apple3 -->
+    <div class="columns is-centered is-multiline">
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/apple3_gt.gif" alt="Apple3 ground truth" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/apple3_pred.gif" alt="Apple3 prediction" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Apple</strong> – Deformation under grasp</p>
+      </div>
+
+      <!-- Row 2: ellipsoid02 -->
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/ellipsoid02_gt.gif" alt="Ellipsoid ground truth" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/ellipsoid02.gif" alt="Ellipsoid prediction" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Ellipsoid</strong> – Soft body compression</p>
+      </div>
+    </div>
+
+    <div class="columns is-centered is-multiline">
+      <!-- Row 3: lemon -->
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/lemon_gt.gif" alt="Lemon ground truth" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/lemon.gif" alt="Lemon prediction" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Lemon</strong> – Indentation</p>
+      </div>
+
+      <!-- Row 4: cucumber1 -->
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/cucumber1_gt.gif" alt="Cucumber ground truth" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/cucumber1.gif" alt="Cucumber prediction" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Cucumber</strong> – Bending and torsion</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== RIGID BODY GRASPING WITH TACTILE SENSOR ==================== -->
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Rigid Body Grasping with Soft Visual Tactile Sensor</h2>
+    <p class="subtitle has-text-centered">Tactile sensor deformation – Ground truth vs. GNN prediction</p>
+
+    <!-- Pair 1: baseline_lemon01_traj06 -->
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/baseline_lemon01_traj06_gt.gif" alt="Lemon traj06 GT" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/baseline_lemon01_traj06_pred.gif" alt="Lemon traj06 pred" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Lemon grasp (traj06)</strong> – Tactile sensor response</p>
+      </div>
+
+      <!-- Pair 2: baseline_strawberry01_traj05 -->
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/baseline_strawberry01_traj05_gt.gif" alt="Strawberry traj05 GT" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/baseline_strawberry01_traj05_pred.gif" alt="Strawberry traj05 pred" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Strawberry grasp (traj05)</strong> – Tactile sensor deformation</p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <!-- Pair 3: tet_stress_lemon01_traj26 -->
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/tet_stress_lemon01_traj26_gt.gif" alt="Lemon traj26 GT" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/tet_stress_lemon01_traj26_pred.gif" alt="Lemon traj26 pred" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Lemon stress (traj26)</strong> – Stress distribution</p>
+      </div>
+
+      <!-- Pair 4: undeformed_lemon01_traj07 -->
+      <div class="column is-half">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./static/gifs/undeformed_lemon01_traj07_gt.gif" alt="Lemon undeformed traj07 GT" style="width: 100%; border-radius: 8px;">
+            <p class="caption">Ground Truth (FEM)</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/gifs/undeformed_lemon01_traj07_pred.gif" alt="Lemon undeformed traj07 pred" style="width: 100%; border-radius: 8px;">
+            <p class="caption">GNN Prediction</p>
+          </div>
+        </div>
+        <p class="has-text-centered"><strong>Lemon undeformed (traj07)</strong> – Initial contact</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
